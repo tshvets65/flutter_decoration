@@ -24,8 +24,21 @@ class _State extends State<MyApp> {
           child: Column(
             children: <Widget>[
               Text(
-                'Add Widgets Here',
+                'Sun Shine',
               ),
+              Container(
+                child: Image(image: AssetImage('images/smile.png')),
+                padding: EdgeInsets.all(48.0),
+                decoration: BoxDecoration(
+                  //border: Border.all(color: Colors.orange, width: 2.0),
+                  borderRadius: BorderRadius.circular(400.0),
+                  gradient: RadialGradient(colors: <Color>[
+                    Colors.orange,
+                    Colors.yellow,
+                    Colors.white
+                  ]),
+                ),
+              )
             ],
           ),
         ),
